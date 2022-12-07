@@ -18,8 +18,11 @@ keywords = ["arm", "cortex-m", "nrf52", "hal", "nrf52833"]
 license = "MIT OR Apache-2.0"
 edition = "2018"
 
-[dependencies]
-nrf52833-pac = "0.12.2"
+#[dependencies]
+#nrf52833-pac = "0.12.2"
+[dependencies.nrf52833-pac]
+git = "https://github.com/kanghua309/nrf-pacs.git"
+rev = "12df234"
 
 [dependencies.nrf-hal-common]
 path = "../nrf-hal-common"
